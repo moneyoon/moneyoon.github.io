@@ -1,0 +1,264 @@
+:root {
+    --primary-color: #2563eb;
+    --background: #f8f9fa;
+    --text: #2d3748;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'Segoe UI', system-ui;
+    background-color: var(--background);
+    background-image: url('background.jpg'); /* 用户后续可替换为导入的背景图片 */
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.upload-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+.share-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+.additional-features {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+#shareLink {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background: white;
+    width: 100%;
+}
+
+#copyBtn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#copyBtn:hover {
+    background: #1d4ed8;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text); 
+}
+
+input[type='file'] {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background: white;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.file-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.file-list a:hover {
+    text-decoration: underline;
+}
+
+#uploadMessage {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+#uploadMessage:empty {
+    display: none;
+}
+
+#beian {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+#beian a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#beian a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+}
+
+.back-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+}
+
+.navbar {
+    background: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.nav-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.nav-shortcut {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-shortcut:hover {
+    background: #1d4ed8;
+    filter: brightness(1.1);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    padding: 1rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+#fortune {
+    margin-bottom: 1rem;
+}
+
+#time {
+    margin-bottom: 1rem;
+}
+
+#calendar {
+    margin-bottom: 1rem;
+}
+
+.nav-btn:hover {
+    background: #1d4ed8;
+    filter: brightness(1.1);
+}
+
+/* 新增功能区域样式 */
+.additional-features {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+.additional-features h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>文件分享</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="login.html" class="nav-btn">登录</a>
+        <a href="register.html" class="nav-btn">注册</a>
+        <a href="#" class="nav-shortcut">首页</a>
+        <a href="#" class="nav-shortcut">帮助</a>
+    </nav>
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>左侧功能</h2>
+            <div id="fortune">今日运势：加载中...</div>
+            <div id="time">当前时间：加载中...</div>
+            <div id="calendar">日历：加载中...</div>
+        </div>
+        <div class="container">
+            <h1>文件分享</h1>
+            <div class="upload-section">
+                <h2>上传文件</h2>
+                <input type="file" id="fileInput">
+                <button id="uploadBtn">上传</button>
+                <div id="uploadMessage"></div>
+            </div>
+            <div class="file-list">
+                <h2>文件列表</h2>
+                <ul id="filesList"></ul>
+            </div>
+            <div class="share-section">
+                <h2>分享链接</h2>
+                <input type="text" id="shareLink" readonly>
+                <button id="copyBtn">复制链接</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2>右侧功能</h2>
+            <p>待添加功能内容</p>
+        </div>
+    </div>
+    <div class="additional-features">
+        <h2>功能介绍</h2>
+        <p>本平台支持文件上传、文件列表查看和链接分享等功能。</p>
+    </div>
+    <div id="beian">
+        <a href="https://beian.miit.gov.cn/" target="_blank">ICP备案号：[待修改]</a>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
